@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full-vnc
+FROM gitpod/workspace-full
 RUN sudo apt-get install python-tk
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
