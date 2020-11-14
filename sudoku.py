@@ -1,3 +1,4 @@
+# sudoku board
 board = [
     [7,8,0,4,0,0,1,2,0],
     [6,0,0,0,7,5,0,0,9],
@@ -9,3 +10,22 @@ board = [
     [1,2,0,0,0,7,4,0,0],
     [0,4,9,2,0,6,0,0,7]
 ]
+
+def print_board(bo):
+    # after every 3 rows, print a horizontal line 
+    for i in range(len(bo)):
+        if i % 3 == 0 and i != 0:
+            print("- - - - - - - - - - - - ")
+    # every 3rd column print a vertical line
+        for j in range(len(bo[0])):
+            if j % 3 == 0 and j != 0:
+                # dont newline after print
+                print(" | ", end="")
+
+                # newline at end of board
+            if j == 8:
+                print(bo[i][j])
+            else:
+                print(str(bo[i][j]) + " ", end="")
+
+print_board(board)
