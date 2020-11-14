@@ -1,6 +1,6 @@
-image:
-  file: .gitpod.Dockerfile
+image: gitpod/workspace-full-vnc
+
 
 tasks:
-  - init: 'echo "TODO: Replace with init/build command"'
+  - init: sudo apt-get install python3-tk
     command: 'echo "TODO: Replace with command to start project"'
